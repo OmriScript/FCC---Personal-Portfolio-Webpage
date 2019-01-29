@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+
+}
+
+#navbar {
+    position: fixed;
+    background-color: rgb(98, 26, 194);
+    width: 100%;
+    z-index: 1;
+    height: 120px;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #ddd;
+    padding: 10px;
+}
+
+#navbar a:hover {
+    color: #42155A;
+    font-weight: bold;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(98, 26, 194), rgb(66, 21, 90));
+}
+
+#welcome-section p {
+    padding: 20px;
+}
+
+#welcome-button {
+    text-decoration: none;
+    align-self: center;
+    color: #FFF;
+    border: 5px double #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#welcome-button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+#project-header {
+    text-align: center;
+    background-color: rgb(66, 21, 90);
+}
+
+#projects {
+    background-image: linear-gradient(rgb(66, 21, 90), rgb(98, 26, 194));
+    width: 100%;
+    text-align: center;
+    padding: 120px;
+}
+
+.project-tile h3 {
+    padding: 30px;
+}
+
+.project-tile {
+    position: relative;
+    margin: 20px;
+}
+
+.project-tile img {
+    max-width: 80%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.project-tile img:hover {
+    opacity: 1;
+}
+
+#profile-link {
+    background-color: rgb(98, 26, 194);
+    text-align: center;
+}
+
+#profile-link h2 {
+    padding: 20px;
+}
+
+#profile-link ul {
+    list-style: none;
+}
+
+#footer-media {
+    display: flex;
+    padding-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+#footer-media .fab {
+    padding-right: 30px;
+}
+
+#footer-media .fab:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+#profile-link p {
+    font-size: 12px;
+    padding: 15px;
+}
+
+@media (min-width: 769px) {
+    #navbar {
+        display: flex;
+        height: auto;          
+    }
+    #projects {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .project-tile {
+        max-width: 30%;
+    }
+}
